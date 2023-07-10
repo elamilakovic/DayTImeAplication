@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="View Week"
+        android:textColor="@color/black"
+        android:background="@drawable/blue"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:onClick="weeklyAction"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue"
+            android:fontFamily="serif"
+            android:onClick="PreviousMjesec"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mjesecGodinaID"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Veljača 2023"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:gravity="center|top"
+            android:background="@drawable/blue"
+            android:fontFamily="serif"
+            android:onClick="NextMjesec"
+            android:text="@string/forward"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="@string/MON"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="@string/TUE"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="@string/WED"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/THU"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/FRI"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="SUB"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="NED"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView"
+        android:layout_width="match_parent"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

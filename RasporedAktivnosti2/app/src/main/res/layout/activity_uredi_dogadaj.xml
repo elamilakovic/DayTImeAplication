@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/purple"
+    tools:context=".UrediDogadaj">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:fontFamily="serif"
+        android:background="@color/purple"
+        android:text="Add New Event"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:fontFamily="serif"
+        android:text="@string/name"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/nazivDogadajaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/datumDogadajaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="@string/Date"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/vrijemeDogadajaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:text="@string/Vrijeme"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/selectVrijemeButtonID"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ljub"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:onClick="selectVrijeme"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/Set_time" />
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ljub"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="@string/Save"
+        android:textColor="@color/white"
+        android:onClick="spremiDogadaj"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</LinearLayout>

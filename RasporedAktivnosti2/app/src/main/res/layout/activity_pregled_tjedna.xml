@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".PregledTjedna">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="View Day"
+        android:textColor="@color/black"
+        android:background="@drawable/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:onClick="DailyAction"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:background="@drawable/white"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:onClick="prosliTjedan"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/mjesecGodinaID"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Veljača 2023"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            android:paddingTop="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/white"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:onClick="NextWeek"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/MON"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TUE"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/WED"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/THU"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/FRI"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/SAT"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/SUN"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/New_event"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:background="@drawable/white"
+        android:textStyle="bold"
+        android:onClick="newEventAction"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/eventListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_weight="5"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
